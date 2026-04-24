@@ -25,7 +25,9 @@ module.exports = async (req, res) => {
       lastUpdated: new Date().toISOString(),
     };
 
-    return res.status(200).json(finalData);
+    return res.status(200).send("WORKING");
+
+    // return res.status(200).json(finalData);
 
   } catch (err) {
     console.error("API ERROR:", err);
